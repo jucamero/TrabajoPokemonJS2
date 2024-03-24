@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: url(/img/7921828.jpg); /*Imagen de fondo*/
+    background-size: cover; /* Escalar la imagen para que cubra todo el fondo */
+    background-position: center; /* Posicionar la imagen en el centro del fondo */
+    background-attachment: fixed; /* Fijar la imagen de fondo en su posición */
+  
+    font-family: Arial, sans-serif;
+  }
+
+
+  .input-container {
+    margin-bottom: 20px;
+  }
+
+
+/*Titulo H1 de Pokemones*/
+  .title {
+    font-size: 50px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Agregar espacio inferior */
+  }
+
+
+  #poke-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  .poke-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #d7e0ff;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /*La imagen del pokemon*/
+  .poke-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); /* Círculo con sombra */
+    object-fit: cover; /* Para asegurar que la imagen cubra todo el contenedor */
+  }
+
+  /*pone la imagen un poco mas grande al mover el cursor sobre ella*/
+  .poke-card img:hover {
+    transform: scale(1.02);
+  }
+  /*El h2 es el nombre del pokemon*/
+  .poke-card h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px; /* Agrega espacio interno alrededor del texto */
+    border: 2px solid black; /* Borde sólido de 2px de grosor */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #014689; /* Cambia el color a del textoo*/
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    
+}
+
+/*el p es el titulo como el tipo y habilidades*/
+.poke-card p {
+    margin: 5px auto; /* Alinea verticalmente y centra horizontalmente */
+    font-size: 16px;
+    font-weight: bold; /* Hace que el texto dentro del párrafo sea negrita */
+    border: 1px solid black; /* Agrega un borde negro */
+    padding: 5px; /* Agrega un espacio interno alrededor del texto */
+    max-width: 80%; /* Limita el ancho máximo del párrafo */
+    text-align: center; /* Centra el texto horizontalmente */
+    overflow: auto; /* Agrega una barra de desplazamiento si el contenido es demasiado largo */
+    max-height: 200px; /* Limita la altura máxima del párrafo */
+  }
+  
+  /*el p span son las caracteristicas del tipo y habilidades*/
+  .poke-card p span {
+    font-weight: normal; /* Restaura el peso de la fuente normal para los spans */
+    border: none; /* Elimina el borde para los spans */
+    padding: 0; /* Elimina el relleno para los spans */
+    display: block; /* Muestra los spans como bloques */
+    margin-bottom: 5px; /* Agrega un espacio entre los spans */
+  }
+  
+
+
+/*Para los filtros de las listas*/
+  header {
+    padding-block: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+
+  img{
+    margin: 1%;
+    align-items: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-black);
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--clr-black);
+  font-family: 'Rubik', sans-serif;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-inline: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: column;
+  flex-wrap: flex-start;
+  gap: .5rem;
+}
+.btn-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: .5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: .2s;
+}
+
+.btn-header:hover {
+  transform: translateY(-2px); /* Movido ligeramente hacia arriba al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajustado el efecto de sombra al hacer hover */
+}
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
